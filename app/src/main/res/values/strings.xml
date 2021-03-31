@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Sawari</string>
+    <string name="contact_us"><u>Contact Us</u></string>
+    <string name="launch_activity">Open App</string>
+    <string name="stop_location_updates_button_text">Stop Location Updates</string>
 </resources>

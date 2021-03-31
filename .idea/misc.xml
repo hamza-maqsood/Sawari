@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.40923076923076923" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.39897435897435896" />
+        <entry key="app/src/main/res/drawable/bg_curved_rectangle.xml" value="1.0" />
+        <entry key="app/src/main/res/layout/activity_app.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/dialog_update_fare.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/fragment_about.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.38140417457305503" />
+        <entry key="app/src/main/res/layout/fragment_set_new_fare.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.3490990990990991" />
+      </map>
+    </option>
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />

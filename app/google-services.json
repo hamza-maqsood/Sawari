@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "386671292852",
+    "project_id": "sawari-c641c",
+    "storage_bucket": "sawari-c641c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386671292852:android:d41e9c7e57f962fc2f82e1",
+        "android_client_info": {
+          "package_name": "com.dscfast.sawari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "386671292852-o7mqlgseraj14dcv7bnhqi2u2ic60gf5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApfKhCudY9LpllicyGI1Gsk-Oo0d9kSY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "386671292852-o7mqlgseraj14dcv7bnhqi2u2ic60gf5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

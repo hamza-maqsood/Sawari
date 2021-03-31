@@ -1,7 +1,10 @@
-plugins {
-    id 'com.android.application'
-    id 'kotlin-android'
-}
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'androidx.navigation.safeargs.kotlin'
 
 android {
     compileSdkVersion 30
@@ -13,7 +16,7 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -30,6 +33,11 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures {
+        dataBinding = true
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -38,7 +46,44 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    testImplementation 'junit:junit:4.+'
+
+    //dependency injection
+    implementation 'org.kodein.di:kodein-di-generic-jvm:6.3.3'
+    implementation "org.kodein.di:kodein-di-framework-android-core:6.3.3"
+    implementation 'org.kodein.di:kodein-di-framework-android-x:6.3.3'
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.1.1'
+
+    // handle runtime permissions with quick permissions
+    implementation 'com.github.quickpermissions:quickpermissions-kotlin:0.4.0'
+
+    // jetpack data store
+    implementation "androidx.datastore:datastore-preferences:1.0.0-alpha08"
+
+    // location
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+
+    // android live data kotlin extensions
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
+    implementation "androidx.lifecycle:lifecycle-common-java8:2.3.1"
+
+    // broadcast manager extensions
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+
+    // gson for parsing json
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    // Kotlin nav controller
+    def nav_version = "2.3.4"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    // painless logging while debugging
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
+
+apply plugin: 'com.google.gms.google-services'
